@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Overview of Data Science Practice/3 - Making decisions - statistics.md",
+                "file": "Statistics for Data Science/Data Types & Stats.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 - Making decisions - statistics"
+              "title": "Data Types & Stats"
             }
           }
         ],
@@ -211,12 +211,23 @@
   },
   "active": "e1631818b5aa5941",
   "lastOpenFiles": [
+    "Statistics for Data Science/Data Types & Stats.md",
+    "Misc/Clarifying Structure.md",
+    "Overview of Data Science Practice/2 - Data science and AI.md",
+    "Statistics for Data Science/Analysis of Variance.md",
+    "Statistics for Data Science/Multiple Linear Regression.md",
+    "Statistics for Data Science/Simple Linear Regression.md",
+    "Statistics for Data Science/Statistical Inference.md",
+    "Statistics for Data Science/Calculating Probabilities.md",
+    "Statistics for Data Science/Random Variables.md",
+    "Statistics for Data Science/Distributions.md",
+    "Misc/University of Leicester Author-Date Harvard 2024.pdf",
+    "Overview of Data Science Practice/3 - Making decisions - statistics.md",
     "2025-10-01.md",
     "Overview of Data Science Practice/0 - Introduction.md",
     "Misc/Referencing.md",
     "Misc/BOOTCAMP_2025_S4.pptx",
     "Misc/Writing the Lit Review.md",
-    "Misc/University of Leicester Author-Date Harvard 2024.pdf",
     "Misc/Tasks.md",
     "Overview of Data Science Practice/9 - Review - preparing for the exam.md",
     "Welcome.md",
@@ -225,8 +236,6 @@
     "Overview of Data Science Practice/6 - Communication & visualisation.md",
     "Overview of Data Science Practice/5 - Bias and ethics.md",
     "Overview of Data Science Practice/4 - Finding data - sources.md",
-    "Overview of Data Science Practice/3 - Making decisions - statistics.md",
-    "Overview of Data Science Practice/2 - Data science and AI.md",
     "Overview of Data Science Practice/1 - Wrangling data - R & Excel.md",
     "Fundamentals of Data Science/Introduction.md",
     "Untitled",
