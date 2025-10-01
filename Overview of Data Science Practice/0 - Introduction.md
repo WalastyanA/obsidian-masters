@@ -1,0 +1,74 @@
+## Assessment
+- 70% Individual Report on Group Project - 24/11/2024 12:00
+- 30% Online Exam - Jan exam period
+	- Open book timed
+
+- Ensure work is reproducible, don't mess with the data **too** much to get better results
+
+##### Black box prediction 
+- Includes all empirical approaches
+- The only place you can gain confidence for a black box model is testing the model on historical data. This is why it can be hard to be confident in the model if it is applied anywhere else, even somewhere as close as further down the same river 
+- Lots of things like dams are controlled using black box models because they work for that place accurately
+- Mentioned in week 1 [[Types of Model#^f16513|here]]
+- Black box models are calibrated on data, using statistical equations to inform their results
+- You would:
+	- Put a river gauge in the river or get the data from some other source who has already done this
+	- You would plot the data on a hydrograph 
+	- You would split the hydrograph into sections, as seen in Fig.1 ***INSET PICTURE HERE***
+	- Each of these sections is a single curve, so you would get statistical equations to describe them
+- These are very quick to develop as they are just predicting the shape of the hydrograph
+- Many limitations:
+	- We are modelling a river, and when it rains there is more discharge. This ignores many of the complexities of real life, we are ignoring all the different types of surfaces and other things
+	- Spatial variability is not accounted for, your measurements will not be the same for everywhere in the river
+- Although model evaluation may show that the model is working well, but it won't tell you anything about the processes 
+- Though they have limitations, these models still have value if you only want the result, or you need the result quickly when there may not be time to set up a more complex model 
+- Things they can't simulate:
+	- Combined rain and melt
+	- Landslides 
+	- Ice jams 
+	- Dam failure
+	- Anything that isn't really common so there is an abundance of data on the subject as the model doesn't take into account processes, it's just statistics
+##### White box modelling 
+- When modelling river discharge, Q is normally used on the axis for discharge, sometimes also written as DIS
+- Physical factors include as demonstrated in Fig.2: ***Insert fig 2 here***
+	- Catchment area
+		- In a smaller area catchment you would see a much quicker peak flow and shorter lag time
+	- Slope 
+		- if a catchment is cteeper/shallower the water will reach the river faster or more slowly
+	- Shape
+		- Some catchments are round, some are more elongated and you can see the hydrographs would look quite different, the example is a bit of a simplification
+	- Drainage Density 
+		- A river with a larger number of sub-channels/tributaries mean that the river flow would increase more quickly after a rainfall event
+	- Soil Type 
+		- A soil that is very dense, such as a clay soil, the water is much more likely to run across the surface rather than go into the ground, whereas for something such as a sandy loam the water will quickly flow into the soil
+		- On the graph, if the runoff coefficient is high, this mean that the water cannot go into the soil or very little goes into the soil, leading to more discharge
+	- Land Use 
+		- You can describe any type of land use, Urban, forest, pasture
+		- Effects how water runs across the surface
+		- Lots of the modelling done by consultancies surround the issue of changing land use and how this will effect river discharge
+		- You can see on the example graph Fig.4 or 5 now the effect of changing land use changes the river discharge over time 
+	- Vegetation 
+		- Vegetation plays two important roles in how water gets to river channels
+		- Important to model as there is interception, when rainfall hits vegetation, some of the water will stay on the vegetation, with some of the water staying on the plats rather than getting to the river channel. 
+		- Some water will move through vegetation into the ground, called throughfall, with some models displaying this
+		- Measured with canopy storage capacity, this is measured in mm, ***I'm not quite sure how the mm add up?*** 
+		- One or two trees will make little difference but if you have thousands then there will be a considerable difference
+		- Different trees have different canopy storage capacity
+		- Each tree will be different but you can edit the parameters in the model 
+		- Vegetation can have a significant effect on the hydrograph Fig.NextFig
+		- The other most important thing that vegetation does is roots:
+		- Roots create cavities/pore spaces/air spaces in the soil, allowing water to drain away into the soil. In hydrological models, you give the model the rooting depth of your vegetation, 
+		- A deep rooting depth will result in a longer lag time and smaller peak flow
+##### Grey box modelling 
+- Often referred to as a lumped model 
+- An example used is CATCHMOD, a grey box model used by the Environment Agency 
+	- The EA uses the CATCHMOD model to understand what happens if you take water out of a watercourse, allowing them to effectively give out licences to people to take water out of a watercourse *water source abstraction licences*. What they want to do is make sure oyu aren't taking too much wate rfrom the river to damage the ecology or limit water usage further down the river
+	- It is also used for ... something something flood prediction? ...
+	- CATCHMOD works by representing physical processes by dividing the catchment into "contributing zones"
+	- For example an urban zone will be very different for a riparian zone and very different to a clay or limestone zone 
+	- Contributing Zones are defined by distinct land use, geology or soil types
+	- INSERT FIG HERE Here you can see the 
+	- What grey box models will do is simulating how much runoff is generated for each zone in the catchment then add it all up to predict how much water will end up the river
+	- They are called lumped models because you are essentially lumping together the total runoff from all the contributing zones
+	- FIG describing the processes in the CATCHMOD model. You can see this is described as a model of a series of buckets connected by arrows representing processes. This is why they are also sometimes called a bucket model 
+	- Each bucket represents an area where water can be stored in a catchment. There are equations that describe all the processes
