@@ -16,3 +16,9 @@ A statistic is just any single number that summarises a data set. For example:
 
 The advantages of using statistics are presenting and communicating the data, drawing conclusions form the data and comparing data sets to each other. 
 The disadvantages of using a statistic are losing so much of the information, for example you might be interested in small variations in the data. Also two very different data sets can have the same averages but very different data.
+### Averages
+You know averages, mode, median, mean
+
+mean can be represented by μ (mu) or x̄ (x-bar)
+
+If you use a weighted mean, actually call it that
